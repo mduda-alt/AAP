@@ -1,0 +1,41 @@
+{
+  "contract_name": "IMDB data quality contract",
+  "timestamp": "2026-06-23T20:54:58.320001",
+  "rules": {
+    "no_nulls": {
+      "passed": true,
+      "severity": "error",
+      "details": "Liczba NULL w text i label: 0"
+    },
+    "labels_in_set": {
+      "passed": true,
+      "severity": "error",
+      "details": "Unikalne wartości label: [0, 1]"
+    },
+    "min_word_count": {
+      "passed": true,
+      "severity": "error",
+      "details": "Liczba recenzji krótszych niż 5 słów: 0"
+    },
+    "max_word_count": {
+      "passed": true,
+      "severity": "error",
+      "details": "Liczba recenzji dłuższych niż 2000 słów: 0"
+    },
+    "no_duplicates": {
+      "passed": true,
+      "severity": "error",
+      "details": "Liczba duplikatów text: 0"
+    },
+    "class_balance": {
+      "passed": true,
+      "severity": "warning",
+      "details": "Stosunek klas: 1.000"
+    },
+    "no_html_tags": {
+      "passed": false,
+      "severity": "warning",
+      "details": "Liczba recenzji zawierających HTML: 1189"
+    }
+  }
+}
